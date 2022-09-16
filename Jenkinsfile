@@ -4,8 +4,8 @@ pipeline {
 stages {
    stage("ci") {
    steps {
-     sh 'zip -r helloworld.html-$BUILD_NUMBER.zip *'  
-     sh 'aws s3 cp helloworld.html-$BUILD_NUMBER.zip s3://artifactory-html/'
+     sh 'zip -r my-world.html-$BUILD_NUMBER.zip *'  
+     sh 'aws s3 cp my-world.html-$BUILD_NUMBER.zip s3://artifactory-html/'
    }
    }
    stage("cd"){
